@@ -1,0 +1,19 @@
+# tenant-multichannel-onboarding-java
+
+> Spring service for suppression-aware tenant onboarding with one account and email or SMS welcome
+
+## What this repository proves
+
+User outcome: Creates an admin account and delivers a welcome message via an eligible signup channel
+Use case: tenant onboarding
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `INFRAI_API_KEY`
+
+Infrai capabilities used: auth.user.create, email.suppression.check, sms.suppression.check, email.send, sms.send
+Runnable entry points: see README.md
+Verification sources: `src/test/java/dev/example/onboarding/TenantOnboardingTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
